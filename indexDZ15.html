@@ -10,7 +10,7 @@
         .js-list-albums:hover{
             cursor: pointer;
         }
-        .alert-warning:hover{
+        .alert-primary:hover{
             background-color: beige;
             color: brown;
         }
@@ -62,7 +62,7 @@
         sendGetPhotoRequest()
         function renderAlbums(title,id) {
             const albumTodo = document.createElement('div');
-            albumTodo.className = `alert alert-warning`;
+            albumTodo.className = `alert alert-primary`;
             albumTodo.dataset.id = id + 1;
             albumTodo.textContent = title;
             pTodo.append(albumTodo);
